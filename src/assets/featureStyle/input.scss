@@ -1,0 +1,63 @@
+@import '../modalStyle/variable.scss';
+
+.baseInput {
+  height: 3.4rem;
+
+  .ant-input {
+    border-radius: unset !important;
+  }
+
+  overflow: hidden;
+  border:1px solid #d9d9d9;
+
+  input,
+  .ant-input-affix-wrapper {
+    outline: none;
+    border: none;
+    height: 100%;
+  }
+
+}
+
+.searchInPut {
+
+  border: none !important;
+  background-color: $bg_input !important;
+  // padding: unset ;
+  display: flex;
+  margin: 0;
+
+  input {
+    background-color: transparent;
+    padding: 0 1.2rem !important;
+
+    &::placeholder {
+      color: #828282;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.checkEmptyText {
+  input {
+    border: 1px solid red;
+  }
+}
+
+.ant-input,
+.ant-picker {
+  &:hover {
+    box-shadow: 0 0 0.4rem $main_color !important;
+    border-color: rgba($color: $main_color, $alpha: 0.5) !important;
+  }
+}
+
+input:hover {
+  box-shadow: none !important;
+}

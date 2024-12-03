@@ -1,0 +1,207 @@
+@import "../modalStyle/variable.scss";
+
+.btn_Login {
+    background-color: $main_color !important;
+    color: $white_color !important;
+    height: 3.4rem;
+    font-size: 1.6rem;
+
+    &:hover {
+        border: none !important;
+        color: $white_color !important;
+        box-shadow: 0 0 1rem rgba($color: $main_color, $alpha: 0.5);
+    }
+}
+
+.btnDisabled {
+    background-color: $main_color !important;
+    color: $white_color !important;
+    height: 3.4rem;
+    opacity: 0.8;
+}
+
+.btnGray {
+    background-color: $gray_color !important;
+    color: $white_color !important;
+    height: 3.4rem !important;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnOrange {
+    background-color: rgb(161 119 100) !important;
+    color: $white_color !important;
+    height: 2.5rem !important;
+    font-size: 1.3rem;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    &:hover {
+        color: $white_color !important;
+        border: none !important;
+        box-shadow: 0 0 1rem rgba($color: $main_color, $alpha: 0.5);
+    }
+
+    svg {
+        margin-right: 0.8rem;
+    }
+}
+
+.mainBtn {
+    color: $main_color !important;
+    border-color: $main_color !important;
+    font-weight: 500;
+    height: 3.4rem;
+
+    &:hover {
+        color: $main_color !important;
+    }
+}
+
+.squareBtn {
+    color: $main_color !important;
+    border-radius: unset !important;
+    margin: 0 auto;
+    height: 3.4rem;
+
+    // padding: 0 !important;
+    &:hover {
+        color: $main_color !important;
+    }
+}
+
+.btnCancel {
+    color: #C4C4C4 !important;
+    border-color: #C4C4C4 !important;
+    font-weight: 500;
+    height: 3.4rem;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: center;
+
+    &:hover {
+        color: $main_color !important;
+    }
+}
+
+.btnChooseImage {
+
+    &>div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        img {
+            box-shadow: 0 0 0.5rem rgba($color: $black_color, $alpha: 0.3);
+        }
+    }
+
+    .haveIMG {
+        position: relative;
+        // width: 30rem;
+        width: 100%;
+        height: 100%;
+        // height: 18rem;
+        box-shadow: 0 0 0.5rem rgba($color: $black_color, $alpha: 0.3);
+        overflow: hidden;
+
+        .iconChange {
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+            cursor: pointer;
+            padding: 0.4rem 0.8rem;
+            border-radius: 0.5rem;
+
+            &:hover {
+                background-color: rgba($color: $main_color, $alpha: 0.5);
+                box-shadow: 0 0 0.5rem rgba($color: $black_color, $alpha: 0.3);
+            }
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 0.5rem;
+        }
+    }
+
+    .noIMG {
+        // min-height: 18rem;
+        height: 100%;
+
+        .upload {
+            width: 100%;
+            border: 1px solid rgba($color: $black_color, $alpha: 0.3);
+            border-radius: 0.5rem;
+            flex-grow: 0.5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 0 0 0.5rem rgba($color: $main_color, $alpha: 0.5);
+                border-color: rgba($color: $main_color, $alpha: 0.5);
+            }
+        }
+    }
+
+}
+
+.btnChooseIcon {
+    width: 100%;
+
+    &>div {
+        display: flex;
+        width: 100%;
+
+    }
+
+    .upload {
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .iconChange {
+        cursor: pointer;
+
+    }
+
+    .upload,
+    .iconChange {
+        display: flex;
+        justify-content: center;
+        width: 70%;
+
+        &:hover {
+
+            box-shadow: 0 0 0.5rem rgba($color: #000000, $alpha: 0.5);
+
+        }
+
+    }
+}
+
+.banner {
+    .noIMG {
+        height: 100%;
+    }
+}
+
+.btnSelectQuestion {
+    border-radius: 4px !important;
+    border: none !important;
+    font-weight: 500 !important;
+    height: 2rem;
+
+    .iconPlus {
+        margin-right: 1rem;
+    }
+}

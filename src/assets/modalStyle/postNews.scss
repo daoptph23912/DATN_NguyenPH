@@ -1,0 +1,123 @@
+@import './variable.scss';
+
+.wrapperModalPostNews {
+    .ant-modal-content {
+        padding: 0;
+
+        .ant-modal-body {
+            padding: 2.4rem 2.4rem 0;
+        }
+
+        .ant-modal-footer {
+            padding: 0 2.4rem 2.4rem;
+
+        }
+
+    }
+
+    .ant-modal-header {
+        padding: 1rem 2.4rem;
+        height: 3.5rem !important;
+        background-color: rgb(161 119 100) !important;
+        display: flex;
+        align-items: center;
+
+        .ant-modal-title {
+            color: $white_color;
+
+        }
+    }
+
+    .ant-modal-close-x {
+        top: 0rem !important;
+
+        svg {
+            fill: white
+        }
+    }
+
+    .note {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 1rem;
+        color: $text_color_input
+    }
+
+    .msgError {
+        position: absolute;
+        bottom: 5rem;
+        left: 12rem;
+        font-style: italic;
+        color: $error_color;
+        font-size: 1.4rem;
+    }
+
+    .itemValueSelect {
+        display: inline-block;
+        width: 100%;
+        // border: 1px solid;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .errorBanner {
+        bottom: 7rem;
+        left: 6rem;
+    }
+
+    .titleArea {
+        font-weight: 500;
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+        line-height: 11px;
+    }
+
+    .noteSize {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: rgba($color: #000000, $alpha: 0.4);
+        margin-top: 1.5rem;
+    }
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #4F4F4F !important;
+}
+
+.ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
+    // width: 90px !important;
+}
+
+// .ant-tabs-tab-btn{
+//     font-size: 2.4rem;
+//     line-height: 3rem;
+
+// }
+.listSelect {
+    position: relative;
+    right: 00px;
+    top: 30px;
+    z-index: 999;
+    // border: 1px solid;
+    width: 130px;
+    height: 72px;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+
+    .item {
+        cursor: pointer;
+        padding: 0.2rem 1rem;
+
+        &:hover {
+            background-color: $main_color;
+            color: white;
+        }
+    }
+}

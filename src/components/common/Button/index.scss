@@ -1,0 +1,80 @@
+.div-botton {
+    line-height: 30px;
+    border: 1px solid #F85C22;
+    color: #F85C22;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    min-width: 90px;
+    text-align: center;
+    font-weight: 600;
+    // background-color: #F85C22;
+    // height: 30px;    
+}
+
+.div-botton:hover {
+    color: #FFFFFF;
+    background-color: #F85C22;
+}
+
+.div-botton-gray {
+    line-height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    ;
+    background-color: rgba(0, 0, 0, 0.2);
+    ;
+    color: #FFFFFF;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    min-width: 90px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.div-botton-gray:hover {
+    background-color: #FFFFFF;
+    color: rgba(0, 0, 0, 0.2);
+    ;
+}
+
+
+.select-search {
+    z-index: 10;
+    backdrop-filter: blur(12px);
+    width: 300px !important;
+    max-height: 350px;
+    position: absolute;
+    left: 0;
+    overflow-x: hidden;
+    transition: 1s;
+    background-color: transparent;
+}
+
+.select-search-close {
+    display: none;
+    transition: 1s;
+    background-color: transparent;
+}
+
+.option-search {
+    cursor: pointer;
+    padding-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.option {
+    cursor: pointer;
+    padding: 2px;
+    padding-left: 30px;
+}
+
+.option:hover {
+    background-color: #00AF98;
+}

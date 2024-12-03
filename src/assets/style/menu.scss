@@ -1,0 +1,345 @@
+@import "variable";
+@import './mixin.scss';
+.wrapperMenu{
+    position: relative;
+    min-height: calc(100vh - $height_header);
+    height: 100%;
+    background: #e5e5e552;
+    min-width: 33rem;
+    padding: 3rem 0;
+    display: flex;
+    // flex-direction: column;
+    @include reponsive(large){
+        display: block;
+       
+    }
+    @include reponsive(medium){
+        display: none;
+       
+    }
+    
+    @include reponsive(small){
+        display: none;
+        
+    }
+    .ant-menu-title-content{
+        margin-left: 2rem !important;
+    }
+    .ant-menu-item{
+        // border: 1px solid;
+        border-radius: unset !important;
+        width: 100%;
+        margin: 2rem 0;
+        svg{
+            width: 3rem;
+        }
+    }
+    .infoUser{
+        background-color: transparent;
+        width: 100%;
+
+        padding: 0 2rem 2rem;
+        hr{
+            width: 85%;
+            margin-top: 2rem ;
+            margin-bottom: 0;
+        }
+    }
+    .ant-menu-submenu-title{
+        svg{
+            position: relative;
+            z-index: 10;
+        }
+    }
+    .ant-menu-submenu{
+        z-index: 999;
+        .ant-menu-submenu-title{
+           &>.ant-menu-item-icon{
+                position: relative;
+                z-index: 999;
+            }
+        }
+        .ant-menu-item{
+
+            padding-left: 6.5rem !important;
+            overflow: unset;
+            position: relative;
+            &::before{
+                content:'';
+                left: 38px;
+                position: absolute;
+                margin-right: 20px;
+                bottom: 20px;
+                border-bottom: 0.5px dashed rgba($color: #000000, $alpha: 0.5);
+                border-left: 0.5px dashed rgba($color: #000000, $alpha: 0.5);
+                width: 25px ;
+                height: 140%;
+                z-index: 9;
+            }
+            &:first-child::before{
+                height: 75%;
+            }
+           span{
+                margin: unset !important;
+            }
+            img{
+                width: 10px;
+                height: 10px;
+            }
+        }
+       
+    }
+    .ant-menu-title-content{
+        font-size: 16px;
+        font-weight: 500;
+    }
+   
+    .textName{
+        width: 100%;
+        padding-left:  2.8rem;
+        font-size: 1.6rem;
+        margin: 3.3rem 0 2.2rem;
+        span{
+            color:#4456F4;
+        }
+    }
+   .headerMenu{
+    .titleMenu{
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: $main_color;
+
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        
+        span{
+            color: $main_color;
+            font-size: 4rem;
+            font-weight: 500;
+        }
+    }
+   }
+    .ant-menu{
+        border: none !important;
+        background-color: transparent !important;
+    }
+    
+    .ant-menu-item.ant-menu-item-selected{
+
+        background-color: rgba($color: $main_color, $alpha: 0.9) !important;
+        
+        .css-icon
+        {
+            filter: brightness(0) invert(1);
+            -webkit-filter: brightness(0) invert(1);
+        }
+        .ant-menu-title-content{
+            color: #fff !important;
+        }
+    }
+    .css-icon{
+        min-width: 3rem !important;
+    }
+   
+}
+.hiden{
+    animation: slide-out 0.3s ease-in forwards;
+    
+}
+.wrapperMenuScreenMedium{
+    position: absolute;
+     z-index: 999;
+     background-color: #fff;
+     min-width: 30rem;
+     min-height: calc(100vh - $height_header);
+     display: flex;
+     flex-direction: column;
+     box-shadow: 0 0 1rem rgba($color: #000000, $alpha: 0.3);    @include reponsive(large){
+    left: -350px !important;
+    }
+    .iconArrowLeft{
+        position: absolute;
+        top: 50%;
+        right: -1.3rem;
+        transform: translateY(-50%);
+    }
+    @include reponsive(medium){
+        display: block;
+       
+    }
+    @include reponsive(small){
+            display: block;
+    }
+    .ant-menu-title-content{
+        margin-left: 2rem !important;
+    }
+    .ant-menu-item{
+        // border: 1px solid;
+        border-radius: unset !important;
+        width: 100%;
+        margin: 2rem 0;
+        svg{
+            width: 3rem;
+        }
+    }
+    .infoUser{
+        background-color: transparent;
+        width: 100%;
+
+        padding: 2rem;
+        hr{
+            width: 85%;
+            margin-top: 2rem ;
+            margin-bottom: 0;
+        }
+    }
+    .ant-menu-submenu-title{
+        svg{
+            position: relative;
+            z-index: 10;
+        }
+    }
+    .ant-menu-submenu{
+        z-index: 999;
+        .ant-menu-submenu-title{
+           &>.ant-menu-item-icon{
+                position: relative;
+                z-index: 999;
+            }
+        }
+        .ant-menu-item{
+
+            padding-left: 6.5rem !important;
+            overflow: unset;
+            position: relative;
+            &::before{
+                content:'';
+                left: 38px;
+                position: absolute;
+                margin-right: 20px;
+                bottom: 20px;
+                border-bottom: 0.5px dashed rgba($color: #000000, $alpha: 0.5);
+                border-left: 0.5px dashed rgba($color: #000000, $alpha: 0.5);
+                width: 25px ;
+                height: 140%;
+                z-index: 9;
+            }
+           span{
+                margin: unset !important;
+            }
+            img{
+                width: 10px;
+                height: 10px;
+            }
+        }
+       
+    }
+    .ant-menu-title-content{
+        font-size: 16px;
+        font-weight: 500;
+    }
+   
+    .textName{
+        width: 100%;
+        padding-left:  2.8rem;
+        font-size: 1.6rem;
+        margin: 3.3rem 0 2.2rem;
+        span{
+            color:#4456F4;
+        }
+    }
+   .headerMenu{
+    .titleMenu{
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: $main_color;
+
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        
+        span{
+            color: $main_color;
+            font-size: 4rem;
+            font-weight: 500;
+        }
+    }
+   }
+    .ant-menu{
+        border: none !important;
+        background-color: transparent !important;
+    }
+    
+    .ant-menu-item.ant-menu-item-selected{
+
+        background-color: rgba($color: $main_color, $alpha: 0.9) !important;
+        
+        .css-icon
+        {
+            filter: brightness(0) invert(1);
+            -webkit-filter: brightness(0) invert(1);
+        }
+        .ant-menu-title-content{
+            color: #fff !important;
+        }
+    }
+    .css-icon{
+        min-width: 3rem !important;
+    }
+}
+.show{
+    animation: slide-in 0.3s ease-out !important;
+}
+.footerMenu{
+    flex-grow: 1;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 2rem;
+}
+@keyframes slide-in {
+    0% {
+      left: -300px;
+    }
+    // 33.33% {
+    //  left: 50px;
+    // }
+    // 66.67% {
+    //  left:10px;
+    // }
+    100% {
+        left: 0;
+    }
+  }
+@keyframes slide-out {
+    0% {
+      left: 0px;
+    }
+    100% {
+        left: -320px;
+    }
+  }
+   .miniMenu{
+    @include reponsive(large){
+        display: none;
+       
+    }
+    min-height: calc(100vh - $height_header);
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0.5rem 7rem;
+    .iconShowMenu{
+        position: relative;
+        right: -2.8rem;
+    }
+   }

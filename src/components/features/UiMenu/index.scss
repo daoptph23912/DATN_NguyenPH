@@ -1,0 +1,70 @@
+.ccp-header {
+    width: 370px;
+    padding: 16px;
+    color: #6a7ec0;
+    font-weight: 400;
+    line-height: 11px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.2;
+    white-space: normal;
+}
+
+.tiltle-header {
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 54.47px;
+    text-align: left;
+    color: #6a7ec0;
+    padding: 16px;
+}
+
+.menu-container {
+    background-color: #D9D9D980;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-width: 350px;
+}
+
+.select-router {
+    width: 370px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    // text-align: left;
+    color: #000000;
+}
+
+.ant-menu-item-selected,
+.ant-menu-submenu-selected {
+    background-color: #C4C4C4 !important;
+}
+
+.ant-menu-item-active,
+.ant-menu-submenu-active {
+    background-color: #C4C4C4 !important;
+}
+
+.ant-menu-item:hover,
+.ant-menu-submenu-title:hover {
+    background-color: #C4C4C4 !important;
+}
+
+.ant-menu-item a,
+.ant-menu-submenu-title a {
+    text-decoration: none;
+}
+
+.ant-menu-item a:hover,
+.ant-menu-submenu-title a:hover {
+    text-decoration: none;
+}
+
+.vertical-center-lang {
+    position: absolute;
+    top: 90%;
+    left: 8%;
+}

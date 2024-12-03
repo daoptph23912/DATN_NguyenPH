@@ -1,0 +1,165 @@
+.UiHeadSelect {
+    border: 10px solid #1b203e;
+}
+
+.title-circular-statistic {
+    font-weight: 600;
+    font-size: 16px;
+    color: #00AF98;
+
+}
+
+.style-table-row {
+    color: rgba(0, 0, 0, 1) !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.title-head {
+    font-family: Baloo;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 11px;
+    text-align: left;
+    color: #F66524;
+    font-weight: bold;
+}
+
+.text-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn-open-class {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+
+.search-input {
+    width: 300px;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+}
+
+.main-header {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(90deg, rgba(103, 98, 98, 0.8), rgb(210, 192, 192));
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Tạo hiệu ứng bóng */
+    color: white;
+    font-size: 14px;
+}
+
+/* Thông tin tài khoản */
+.account-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.account-name {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.border-table {
+    overflow-y: auto;
+    max-height: 700px;
+}
+
+.table-container {
+    max-height: 455px;
+    /* Giới hạn chiều cao */
+    overflow-y: auto;
+    /* Cuộn dọc nếu vượt quá chiều cao */
+    border: 1px solid #ddd;
+    /* Thêm viền nếu cần */
+}
+
+/* Tùy chỉnh thanh cuộn (nếu cần) */
+.table-container::-webkit-scrollbar {
+    width: 8px;
+    /* Độ rộng thanh cuộn */
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Màu thanh trượt */
+    border-radius: 4px;
+    /* Bo góc */
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Nền của thanh cuộn */
+}

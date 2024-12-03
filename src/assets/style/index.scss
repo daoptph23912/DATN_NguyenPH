@@ -1,0 +1,307 @@
+@import 'mixin.scss';
+@import './ant.min.css';
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../Roboto/Roboto-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../Roboto/Roboto-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../Roboto/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../Roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../Roboto/Roboto-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../Roboto/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../Roboto/Roboto-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../Roboto/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../Roboto/Roboto-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../Roboto/Roboto-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+  @import "./variable.scss";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto' ,sans-serif !important;
+}
+html {
+  font-size: 62.5% !important;
+}
+body{
+  font-size: 1.6rem !important;
+}
+.ant-select-selector {
+  text-align: center;
+  min-height: 3.4rem !important;
+  border-color: $main_color !important;
+  border-radius: 40px !important;
+  &:hover, .ant-select-open{
+    border-color: $main_color !important;
+    box-shadow: 0 0 0.5rem $main_color !important;
+  }
+}
+.ant-select .ant-select-arrow {
+  color: $main_color !important;
+}
+.inputRound{
+  display: flex;
+  align-items: center;
+  border-radius: 4rem;
+  height: 3.4rem;
+  overflow: hidden;
+  input,.ant-input-affix-wrapper{
+    outline: none;
+    border: none;
+  }
+  input:hover{
+   box-shadow: none !important;
+  }
+}
+th.ant-table-cell{
+  color: $main_color !important;
+}
+th.centerCell,.centerCell{
+  text-align: center !important ;
+}
+.evenSpace{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+.m10{
+  span{
+    margin: 0 0.5rem;
+    @include reponsive(medium){
+      margin:0 0.5rem;
+  }
+  @include reponsive(small){
+    margin:0 0.5rem;
+  }
+  }
+}
+.collapseText{
+  max-width: 200px !important;
+      text-overflow:ellipsis;
+      -webkit-line-clamp: 2;  /* số dòng hiển thị */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        white-space: nowrap;
+      
+  
+  }
+.pointer{
+  cursor: pointer;
+}
+.ant-modal-content{
+  padding: 0 !important;
+  border-radius: unset !important;
+  
+  .ant-modal-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+      padding: 1.5rem 2.4rem 2.4rem;
+      margin-top: 3rem;
+      text-align: center;
+      border: none;
+        button{
+          &:first-child{
+
+            margin-right: 3.2rem;
+          }
+        }
+      
+  }
+  
+}
+.ant-modal-header{
+  padding: 1rem 2.4rem ;
+  height: 4.4rem !important;
+  background-color: $main_color !important;
+  display:flex;
+  align-items: center; border-radius: unset !important;
+  .ant-modal-title{
+      color:$white_color;
+    font-size: 2rem;
+  }
+}
+.ant-modal-close-x {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  svg{
+      fill:white;
+      height: 24px;
+      width: 22px;
+  }
+}
+.imgTable{
+  img{
+    display: block;
+    object-fit: contain;
+  }
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.headerPage{
+  width: 100%;
+  .title{
+      margin-bottom: 2rem;
+      color: $main_color;
+      font-size: 2.4rem;
+      font-weight: 500;
+  }
+}
+
+.ant-table-wrapper{
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  .ant-spin-container{
+    min-height: 100% !important;
+  }
+  .ant-spin-nested-loading{
+    height: 100%;
+  }
+  .ant-pagination.ant-table-pagination{
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    bottom: -55px;  
+    height: 22px;
+    .ant-pagination-item,li{
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover{
+        border-color: $main_color ;
+      }      
+    }
+  }
+  .ant-table-cell{
+    min-height: 100% !important;
+  }
+}
+.containerContentPage{
+  display: flex;
+  min-height: calc(100vh - $height_header);
+  flex-direction: column;
+  .tableContent{
+    flex-grow: 1;
+  }
+}
+.iconSpin{
+  animation: rotate 2s linear infinite; /* apply rotation using the "rotate" animation with a duration of 2 seconds, linear timing function, and infinite repeat */
+  transform-box: fill-box;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* starting angle */
+  }
+  to {
+    transform: rotate(360deg); /* ending angle or full circle */
+  }
+}
+.iconTbl{
+  // display: inline-block;
+  // min-width:25px;
+  // display: flex ;
+  // align-items: center;
+  // justify-content: center;
+  // border: 1px solid;
+}
+.ant-pagination-item-active{
+  background-color: $main_color !important;
+  color: white !important;
+}
+.ant-pagination-item{
+    color: #828282;
+}
+tr.ant-table-row-selected > td {
+  background: #FFE2D1 !important;
+  border-color:#F5F5F5 !important;
+} 
+
+.ant-checkbox-input[aria-label="Select all"]{
+  display: none !important;
+}
+.borderNone{
+  border: none !important;
+}
